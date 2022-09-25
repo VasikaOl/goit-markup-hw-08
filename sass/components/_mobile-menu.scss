@@ -16,6 +16,7 @@
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
+    height: 100%;
 }
 .mobile-menu.is-open {
     opacity: 1;
@@ -25,16 +26,21 @@
 }
 .mobile-menu__close-btn {
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: 15px;
     background-color: transparent;
     border: 0;
     padding: 0;
     line-height: 0;
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 .mobile-menu__close-icon {
     width: 40px;
-    height: 40px;
+    height: 40px;    
 }
 .mobile-menu__list {
     margin-bottom: 302px;
@@ -47,7 +53,73 @@
     line-height: 1.18;
     letter-spacing: 0.02em;   
     color: var(--dark-accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
 }
+.mobile-menu__contact-tel-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;    
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu__contact-tel {
+    margin-bottom: 32px;
+}
+.mobile-menu__contact-mail-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--grey-accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu__contact-mail {
+    margin-bottom: 64px;
+}
+.mobile-menu__social-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;   
+}
+.mobile-menu__social-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;       
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu__social-item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);    
+    padding-right: 10px;
+}
+.mobile-menu__list .link.current {
+    color: var(--accent-color);
+}
+
