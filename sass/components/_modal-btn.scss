@@ -1,44 +1,67 @@
-.modal-open-btn {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px 32px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--white-accent-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    transition: background-color var(--transition-dur-and-func);
-    
-    &:hover,
-    &:focus {
-        background-color: var(--blue-background-accent-color);
-    }
-}
-
-.portfolio-open-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    background: var(--white-background-accent-color);
-    color: var(--dark-accent-color);
-    border-radius: 4px;
-    border: none;
-    transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
-
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
+@media screen and (max-width: 767px) {
+    .modal-open-btn {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
         color: var(--white-accent-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        transition: background-color var(--transition-dur-and-func);
+
+        &:hover,
+        &:focus {
+            background-color: var(--blue-background-accent-color);
+        }
     }
 }
-.border-btn {
-    padding: 6px 22px;
-}
-.first-btn {
-    padding: 6px 25px;
-}
+// .modal-open-btn {
+//     display: block;
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding: 10px 32px;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     color: var(--white-accent-color);
+//     background-color: var(--accent-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border: none;
+//     transition: background-color var(--transition-dur-and-func);
+    
+//     &:hover,
+//     &:focus {
+//         background-color: var(--blue-background-accent-color);
+//     }
+// }
+
+// .portfolio-open-btn {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.6;
+//     background: var(--white-background-accent-color);
+//     color: var(--dark-accent-color);
+//     border-radius: 4px;
+//     border: none;
+//     transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//         color: var(--white-accent-color);
+//     }
+// }
+// .border-btn {
+//     padding: 6px 22px;
+// }
+// .first-btn {
+//     padding: 6px 25px;
+// }
