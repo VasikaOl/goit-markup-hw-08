@@ -77,30 +77,32 @@
               <a class="mobile-menu__link link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="mobile-menu__contact-list list">
-            <li class="mobile-menu__contact-tel">
-              <a class="mobile-menu__contact-tel-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-menu__contact-mail">
-              <a class="mobile-menu__contact-mail-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__social-list list">
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="">Instagram</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="">Twitter</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link link" href="">Facebook</a>
-            </li>
-            <li class=""><a class="mobile-menu__social-link link" href="">LinkedIn</a></li>
-          </ul>
+          <div class="mobile-menu__contact-social">
+            <ul class="mobile-menu__contact-list list">
+              <li class="mobile-menu__contact-tel">
+                <a class="mobile-menu__contact-tel-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__contact-mail">
+                <a class="mobile-menu__contact-mail-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list list">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Facebook</a>
+              </li>
+              <li class=""><a class="mobile-menu__social-link link" href="">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -111,7 +113,7 @@
         <button class="modal-open-btn" type="button" data-modal-open>Замовити послугу</button>
       </div>
       <!--ADVANTAGES-->
-      <!-- <section class="advantages section">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list list-item list">
@@ -121,6 +123,10 @@
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </a>
+              <h3 class="advantages-list__title">Увага до деталей</h3>
+              <p class="advantages-list__description">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
             </li>
             <li>
               <a href="" class="advantages-list__link">
@@ -128,6 +134,10 @@
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </a>
+              <h3 class="advantages-list__title">Пунктуальність</h3>
+              <p class="advantages-list__description">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
             </li>
             <li>
               <a href="" class="advantages-list__link">
@@ -135,6 +145,10 @@
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </a>
+              <h3 class="advantages-list__title">Планування</h3>
+              <p class="advantages-list__description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
             <li>
               <a href="" class="advantages-list__link">
@@ -142,36 +156,14 @@
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </a>
-            </li>
-          </ul>
-          <ul class="advantages-list list-item list">
-            <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Увага до деталей</h3>
-              <p class="advantages-list__description">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Пунктуальність</h3>
-              <p class="advantages-list__description">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Планування</h3>
-              <p class="advantages-list__description">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="advantages-list__item">
               <h3 class="advantages-list__title">Сучасні технології</h3>
-              <p class="advantages-list__description">
+              <p class="advantages-list__description advantages-list__description-last">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--SPECIALIZATION-->
       <!-- <section class="specialization">
         <div class="container">
@@ -199,17 +191,34 @@
         </div>
       </section> -->
       <!--TEAM-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list-item list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img1.jpg"
-                alt="фото дизайнера продукту"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ID/team.desk.id.webp.webp 1x,
+                    ./images/team/ID/team.desk.id@2x.webp.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ID/team.desk.id.img.jpg 1x,
+                    ./images/team/ID/team.desk.id@2x.img.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  />
+                <img
+                  class="team__img"
+                  src="./images/team/ID/team.desk.id.img.jpg"
+                  alt="фото дизайнера продукту"
+                  width="270"
+                />
+              </picture>
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__description">Product Designer</p>
               <ul class="team__social-list list">
@@ -360,7 +369,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--CUSTOMERS-->
       <!-- <section class="customers section">
         <div class="container">
