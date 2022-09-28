@@ -14,8 +14,8 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />    
-    <link rel="stylesheet" href="./css/main.min.css" />    
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -35,6 +35,11 @@
             <li><a class="menu__link link" href="#">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="page-header__button" data-menu-open>
+          <svg class="page-header__button-icon">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="menu-list-contact list">
           <li>
             <a class="contact-mail link" href="mailto:info@devstudio.com"
@@ -54,6 +59,52 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__contact-social">
+            <ul class="mobile-menu__contact-list list">
+              <li class="mobile-menu__contact-tel">
+                <a class="mobile-menu__contact-tel-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__contact-mail">
+                <a class="mobile-menu__contact-mail-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list list">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Facebook</a>
+              </li>
+              <li class=""><a class="mobile-menu__social-link link" href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <!--PORTFOLIO-->
     <main>
@@ -61,13 +112,19 @@
         <div class="container">
           <h2 class="visually-hidden">Портфоліо</h2>
           <ul class="portfolio-menu list">
-            <li><button class="portfolio-open-btn first-btn" type="button">Усі</button></li>
-            <li>
+            <li class="portfolio-menu__open-btn">
+              <button class="portfolio-open-btn first-btn" type="button">Усі</button>
+            </li>
+            <li class="portfolio-menu__open-btn">
               <button class="portfolio-open-btn border-btn" type="button">Веб-сайти</button>
             </li>
-            <li><button class="portfolio-open-btn border-btn" type="button">Додатки</button></li>
-            <li><button class="portfolio-open-btn border-btn" type="button">Дизайн</button></li>
-            <li>
+            <li class="portfolio-menu__open-btn">
+              <button class="portfolio-open-btn border-btn" type="button">Додатки</button>
+            </li>
+            <li class="portfolio-menu__open-btn">
+              <button class="portfolio-open-btn border-btn" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-menu__open-btn">
               <button class="portfolio-open-btn border-btn" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -75,7 +132,53 @@
             <li class="portfolio-card">
               <a class="link card-link" href="#">
                 <div class="portfolio-list-img-wrapper">
-                  <img src="./images/pf1.jpg" alt="Технокряк" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/TK/pf.desk.tk.webp.webp    1x,
+                        ./images/portfolio/TK/pf.desk.tk@2x.webp.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/TK/pf.desk.tk.img.jpg    1x,
+                        ./images/portfolio/TK/pf.desk.tk@2x.img.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/TK/pf.tab.tk.webp.webp    1x,
+                        ./images/portfolio/TK/pf.tab.tk@2x.webp.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/TK/pf.tab.tk.img.jpg    1x,
+                        ./images/portfolio/TK/pf.tab.tk@2x.img.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/TK/pf.mob.tk.webp.webp    1x,
+                        ./images/portfolio/TK/pf.mob.tk@2x.webp.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/TK/pf.mob.tk.img.jpg    1x,
+                        ./images/portfolio/TK/pf.mob.tk@2x.img.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/TK/pf.desk.tk.img.jpg" alt="Технокряк" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -245,7 +348,9 @@
                 >
               </li>
               <li class="footer__address-item">
-                <a class="footer__address-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="footer__address-contact link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -307,6 +412,7 @@
           </form>
         </div>
       </div>
-    </footer>         
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
