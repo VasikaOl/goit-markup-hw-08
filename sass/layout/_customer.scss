@@ -1,28 +1,65 @@
-.customers__list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--grey-second-accent-color);
-    border-radius: 4px;
-    transition: border var(--transition-dur-and-func);
-    
-    &:hover,
-    &:focus {
-        border: 1px solid var(--accent-color);
+@media screen and (max-width: 767px) {
+    .customers__list-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--grey-second-accent-color);
         border-radius: 4px;
-    }   
-}
-.customers__list-icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--grey-second-accent-color);
-    transition: fill var(--transition-dur-and-func);
+        transition: border var(--transition-dur-and-func);
+        
+        &:hover,
+        &:focus {
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+        }   
+    }
+    .customers__list-icon {
+        width: 106px;
+        height: 60px;
+        fill: var(--grey-second-accent-color);
+        transition: fill var(--transition-dur-and-func);
 
-    .customers__list-link:hover &,
-    .customers__list-link:focus & {
-        fill: var(--accent-color);
+        .customers__list-link:hover &,
+        .customers__list-link:focus & {
+            fill: var(--accent-color);
+        }
+    }
+    .customers__list-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
+
+
+// .customers__list-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--grey-second-accent-color);
+//     border-radius: 4px;
+//     transition: border var(--transition-dur-and-func);
+    
+//     &:hover,
+//     &:focus {
+//         border: 1px solid var(--accent-color);
+//         border-radius: 4px;
+//     }   
+// }
+// .customers__list-icon {
+//     width: 106px;
+//     height: 60px;
+//     fill: var(--grey-second-accent-color);
+//     transition: fill var(--transition-dur-and-func);
+
+//     .customers__list-link:hover &,
+//     .customers__list-link:focus & {
+//         fill: var(--accent-color);
+//     }
+// }
 

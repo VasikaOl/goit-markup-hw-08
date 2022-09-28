@@ -1,6 +1,12 @@
-.specialization {
-    padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+    .specialization {
+        display: none;
+    }
 }
-.specialization__img-wrapper {
-    position: relative;
-}
+
+// .specialization {
+//     padding-bottom: 94px;
+// }
+// .specialization__img-wrapper {
+//     position: relative;
+// }
