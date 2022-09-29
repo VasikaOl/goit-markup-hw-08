@@ -1,34 +1,68 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
     .container-hero {
-        max-width: 480px;
         height: 400px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 480px;
         padding-top: 118px;
         padding-bottom: 118px;
-        background-color: #c4c4c4;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(/images/hero-background/Header.mob.img.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
     .container-hero__title {
-        display: block;
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 30px;
-        width: 100%;
-        font-weight: 900;
+        width: 360px;
         font-size: 26px;
         line-height: 1.62;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--white-accent-color);
     }
 }
+// <<<<<<<<<<--TABLET-->>>>>>>>>>>>
+@media screen and (min-width: 768px) {
+    .container-hero {
+        height: 400px;
+        max-width: 768px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    .container-hero__title {
+        width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+    }
+}
+// <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
+@media screen and (min-width: 1200px) {
+    .container-hero {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;        
+    }
+    .container-hero__title {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    }
+}
+// <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.container-hero {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero-background/Header.mob.img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-hero__title {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-accent-color);
+}
+
 @media screen and (min-device-picel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -37,6 +71,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
             url(/images/hero-background/Header.mob@2x.img.jpg);
     }
 }
+
+
 
 // .container-hero {
 //     max-width: 1600px;
