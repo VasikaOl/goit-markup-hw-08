@@ -16,6 +16,15 @@
         flex-wrap: wrap;
     }
 }
+// <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
+@media screen and (min-width: 1200px) {
+    .customers__list-item {
+        flex-wrap: nowrap;
+    }
+    .customers__list-link{
+        width: 170px;
+    }
+}
 
 // <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
 .customers__list-icon {

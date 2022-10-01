@@ -327,16 +327,31 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 450px;
     height: 609px;
-    background-color: var(--white-accent-color);
-    padding: 40px;
   }
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-accent-color);
+  padding: 40px;
+}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -355,6 +370,24 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .modal-form-check-field {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-form-check-field {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-check-field {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .modal-form-title {
   font-weight: 700;
   font-size: 20px;
@@ -442,8 +475,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-accent-color);
   margin-bottom: 30px;
@@ -540,11 +571,42 @@ img {
 @media screen and (max-width: 767px) {
   .footer-modal-form-input {
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-modal {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-modal-form-input {
     width: 450px;
+    margin-bottom: 20px;
+  }
+  .footer-modal {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-modal-form {
+    display: flex;
+  }
+  .footer-modal-form-input {
+    width: 358px;
+    margin-bottom: 0px;
+  }
+  .footer-modal-form-submit {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+  }
+  .footer-modal {
+    margin-left: auto;
+    text-align: start;
   }
 }
 .footer-modal-form-title {
@@ -561,7 +623,6 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .footer-modal-form-input {
@@ -573,7 +634,6 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
-  margin-bottom: 20px;
 }
 .footer-modal-form-input::placeholder {
   font-size: 16px;
@@ -1013,6 +1073,14 @@ img {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .customers__list-item {
+    flex-wrap: nowrap;
+  }
+  .customers__list-link {
+    width: 170px;
+  }
+}
 .customers__list-icon {
   width: 106px;
   height: 60px;
@@ -1044,11 +1112,20 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .footer__page-logo {
+    text-align: center;
+  }
   .footer__social-list {
     margin-bottom: 60px;
   }
+  .footer__address-item {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
+  .footer__page-logo {
+    text-align: center;
+  }
   .footer-container__address {
     display: flex;
     justify-content: space-around;
@@ -1056,9 +1133,29 @@ img {
   .footer__social-list-container {
     padding-top: 5px;
   }
+  .footer__address-item {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-right: 70px;
+  }
+  .footer__address-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__page-logo {
+    text-align: start;
+  }
+  .footer__address-item {
+    justify-content: flex-start;
+  }
 }
 .footer__page-logo {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1123,7 +1220,6 @@ img {
 
 .footer__address-item {
   display: flex;
-  justify-content: center;
 }
 
 .footer__address-item:not(:last-child) {
