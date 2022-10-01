@@ -171,19 +171,70 @@
           <ul class="list-item list">
             <li>
               <div class="specialization__img-wrapper">
-                <img src="./images/box1.jpg" alt="верстка коду" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/DD/spec.desk.dd.webp.webp    1x,
+                      ./images/work/DD/spec.desk.dd@2x.webp.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/DD/spec.desk.dd.img.jpg    1x,
+                      ./images/work/DD/spec.desk.dd@2x.img.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/work/DD/spec.desk.dd.img.jpg" alt="верстка коду" />
+                </picture>
                 <p class="specialization__overlay">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="specialization__img-wrapper">
-                <img src="./images/box2.jpg" alt="вибір дизайну" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/MD/spec.desk.md.webp.webp    1x,
+                      ./images/work/MD/spec.desk.md@2x.webp.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/MD/spec.desk.md.img.jpg    1x,
+                      ./images/work/MD/spec.desk.md@2x.img.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/work/MD/spec.desk.md.img.jpg" alt="вибір дизайну" />
+                </picture>
                 <p class="specialization__overlay">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="specialization__img-wrapper">
-                <img src="./images/box3.jpg" alt="підбір кольорів" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/DP/spec.desk.dp.webp.webp    1x,
+                      ./images/work/DP/spec.desk.dp@2x.webp.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/DP/spec.desk.dp.img.jpg    1x,
+                      ./images/work/DP/spec.desk.dp@2x.img.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/work/DP/spec.desk.dp.img.jpg" alt="підбір кольорів" />
+                </picture>
                 <p class="specialization__overlay">Дизайнерські рішення</p>
               </div>
             </li>
@@ -596,69 +647,71 @@
     <!--FOOTER-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-address">
-          <a class="footer__page-logo page-logo link" href="./index.html"
-            >Web<span class="footer__logo">Studio</span>
-          </a>
-          <address class="footer__address-area">
-            <ul class="list">
-              <li class="footer__address-item">
-                <a
-                  class="footer__address-link link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+        <div class="footer-container__address">
+          <div class="footer-address">
+            <a class="footer__page-logo page-logo link" href="./index.html"
+              >Web<span class="footer__logo">Studio</span>
+            </a>
+            <address class="footer__address-area">
+              <ul class="list">
+                <li class="footer__address-item">
+                  <a
+                    class="footer__address-link link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer__address-item">
+                  <a class="footer__address-contact link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__address-item">
+                  <a class="footer__address-contact link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social-list-container">
+            <p class="footer__title">Приєднуйтесь</p>
+            <ul class="footer__social-list list">
+              <li>
+                <a href="" class="footer__social-list-link">
+                  <svg lang="en" aria-label="instagram icon" class="footer__social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer__address-item">
-                <a class="footer__address-contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="" class="footer__social-list-link">
+                  <svg lang="en" aria-label="twitter icon" class="footer__social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__address-item">
-                <a class="footer__address-contact link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li>
+                <a href="" class="footer__social-list-link">
+                  <svg lang="en" aria-label="facebook icon" class="footer__social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__social-list-link">
+                  <svg lang="en" aria-label="linkedin icon" class="footer__social-list-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div>
-          <p class="footer__title">Приєднуйтесь</p>
-          <ul class="footer__social-list list">
-            <li>
-              <a href="" class="footer__social-list-link">
-                <svg lang="en" aria-label="instagram icon" class="footer__social-list-icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__social-list-link">
-                <svg lang="en" aria-label="twitter icon" class="footer__social-list-icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__social-list-link">
-                <svg lang="en" aria-label="facebook icon" class="footer__social-list-icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__social-list-link">
-                <svg lang="en" aria-label="linkedin icon" class="footer__social-list-icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        
+
         <!--FOOTER-MODAL-->
         <div class="footer-modal">
           <p class="footer-modal-form-title">Підпишіться на розсилку</p>
@@ -692,8 +745,8 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-    <!--MODAL-FORM-->
-    <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+        <!--MODAL-FORM-->
+        <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <label class="modal-form-field">
             <span class="modal-form-field-desc">Ім'я</span>

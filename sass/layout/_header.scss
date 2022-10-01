@@ -1,10 +1,17 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .page-header__container {
+        justify-content: space-between;
+    }    
     .menu {
         display: none;
     }
     .menu-list-contact {
-    display: none;
+        display: none;
     }
     .page-header__button {
         line-height: 0;
@@ -15,33 +22,27 @@
     .page-header__button-icon {
         width: 40px;
         height: 40px;
-    }
-}
-.page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-.page-header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    }    
 }
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
 @media screen and (min-width: 768px) {
-    .page-header__button {
-        display: none;
+    .page-header {
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
-    .page-navigation {
-        display: flex;
-        align-items: center;
-    }
-    .logo {
-        margin-right: 87px;
+    .page-header__container {        
+        justify-content: space-between;
     }
     .menu {
         display: flex;
         column-gap: 50px;
-    }
+    }    
+    .page-header__button {
+        display: none;
+    }    
+    .logo {
+        margin-right: 87px;
+    }    
     .menu-list-contact {
         margin-left: auto;        
     }
@@ -75,51 +76,85 @@
         background-color: var(--accent-color);
         border-radius: 2px;
     }
-    .icon-smartphone {
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-        fill: currentColor;
+    
+    .contact-mail {        
+        margin-bottom: 10px;        
+    }    
+}
+// <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
+@media screen and (min-width: 1200px) {
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 25px;        
     }
-    .envelope-image {
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-        fill: currentColor;
-    }
-    .contact-mail {
+    .menu {
         display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--grey-accent-color);
-        margin-bottom: 10px;
-        transition: color var(--transition-dur-and-func);
-
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
+        column-gap: 50px;
     }
-    .contact-phone-number {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--grey-accent-color);
-        transition: color var(--transition-dur-and-func);
+   .menu-list-contact {
+       display: flex;
+       margin-left: auto;
+       align-items: center;
+   }
+   .contact-mail {
+       margin-bottom: 0;
+   }   
+}
+// <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.page-header {
+    border-bottom: 1px solid #ececec;
+}
+.page-header__container {
+    display: flex;
+    align-items: center;    
+}
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+.contact-mail {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 30px;
+    color: var(--grey-accent-color);    
+    transition: color var(--transition-dur-and-func);
 
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
     }
 }
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.envelope-image {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.contact-phone-number {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-accent-color);
+    transition: color var(--transition-dur-and-func);
 
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
 
 
 // .page-header {

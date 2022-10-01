@@ -1,46 +1,47 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
-    .portfolio-menu {
-        display: flex;
+    .portfolio-menu {        
         margin-bottom: 40px;
-        flex-wrap: wrap;
-        column-gap: 8px;
+        flex-wrap: wrap;        
         row-gap: 15px;
         width: 326px;
+    }  
+}
+// <<<<<<<<<<--TABLET-->>>>>>>>>>>>
+@media screen and (min-width: 768px) {
+    .portfolio-menu {        
+        margin-bottom: 30px; 
+        justify-content: center;        
     }    
-    .border-btn {
-            padding: 6px 22px;
-    }
-    
-    .first-btn {
-            padding: 6px 25px;
-    }
-    .portfolio-open-btn {
+}
+// <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.portfolio-menu {
+    display: flex;
+    column-gap: 8px;
+}
+.border-btn {
+    padding: 6px 22px;
+}
+.first-btn {
+    padding: 6px 25px;
+}
+.portfolio-open-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    
+
     background: var(--white-background-accent-color);
     color: var(--dark-accent-color);
     border-radius: 4px;
     border: none;
     transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
 
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-            color: var(--white-accent-color);
-        }       
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-accent-color);
     }
 }
-
-
-// .portfolio-menu {
-//     display: flex;
-//     column-gap: 8px;
-//     margin-bottom: 50px;
-//     justify-content: center;
-// }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -79,3 +80,9 @@
     border-top: none;
 }
 
+// .portfolio-menu {
+//     display: flex;
+//     column-gap: 8px;
+//     margin-bottom: 50px;
+//     justify-content: center;
+// }

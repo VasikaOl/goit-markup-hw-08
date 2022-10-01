@@ -1,56 +1,34 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
-@media screen and (max-width: 767px) {    
-    .footer__page-logo {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .footer-address {        
-        margin-bottom: 60px;
-    }
-    .footer__address-link {        
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: var(--white-accent-color);
-    }
-    .footer__address-item {
-        display: flex;
-        justify-content: center;
-    }
-    .footer__address-item:not(:last-child) {
-        margin-bottom: 8px;
-    }
-    .footer__address-contact {
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-        transition: color var(--transition-dur-and-func);
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
-    }   
-        
+@media screen and (max-width: 767px) {   
     .footer__social-list {        
         margin-bottom: 60px;
-    }
-  
+    }  
 }
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
-@media screen and (min-width: 768px) {
-    .footer__page-logo {        
-        margin-bottom: 20px;
+@media screen and (min-width: 768px) {    
+    .footer-container__address {
+        display: flex;
+        justify-content: space-around;
+                
     }
+    .footer__social-list-container {
+        padding-top: 5px;
+    }
+    
 }
 
 // <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.footer__page-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--dark-background-accent-color);
+}
+.footer-address {
+    margin-bottom: 60px;
 }
 .footer__title {
     font-weight: 700;
@@ -90,7 +68,36 @@
     display: flex;
     flex-direction: column;
 }
+.footer__address-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--white-accent-color);
+}
 
+.footer__address-item {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__address-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer__address-contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
 
 // =============================================
 
