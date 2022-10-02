@@ -1,20 +1,18 @@
+// <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
-    .list-item {
-        display: flex;
+    .list-item {        
         flex-direction: column;
-        gap: 30px;      
-        
     }
+}
+// <<<<<<<<<<--TABLET-->>>>>>>>>>>>
+// <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
+// <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.list-item {
+    display: flex;    
+    gap: 30px;
+    
+}
 
-}
-@media screen and (min-width: 768px) {
-    .list-item {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }  
-}
 
 // .list-item {
 //     display: flex;
