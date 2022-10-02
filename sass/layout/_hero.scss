@@ -1,41 +1,24 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
-    .container-hero {
-        height: 400px;
-        max-width: 480px;
-        padding-top: 118px;
-        padding-bottom: 118px;
+    .container-hero {        
+        max-width: 480px;        
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero-background/Header.mob.img.jpg);
     }
-    .container-hero__title {
-        width: 360px;
-        font-size: 26px;
-        line-height: 1.62;
-    }
-
 }
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
 @media screen and (min-width: 768px) {
-    .container-hero {
-        height: 400px;
-        max-width: 768px;
-        padding-top: 118px;
-        padding-bottom: 118px;
+    .container-hero {        
+        max-width: 768px;        
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero-background/Header.tab.img.jpg);
-    }
-    .container-hero__title {
-        width: 360px;
-        font-size: 26px;
-        line-height: 1.62;
-    }
+    }    
 }
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 @media screen and (min-width: 1200px) {
     .container-hero {
-        max-width: 1600px;
         height: 600px;
+        max-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -44,15 +27,28 @@
     .container-hero__title {
         font-size: 44px;
         line-height: 1.36;
-        width: 696px;
+        max-width: 696px;
+    }
+}
+// <<<<<<<<<<--MOBILE + TABLET-->>>>>>>>>>>>
+@media screen and (max-width: 1199px) {
+    .container-hero__title {
+        max-width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+    }
+    .container-hero {
+        height: 400px;        
+        padding-top: 118px;
+        padding-bottom: 118px;
+        
     }
 }
 // <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
-.container-hero {
+.container-hero {    
     margin-left: auto;
     margin-right: auto;
-    background-color: #c4c4c4;
-    
+    background-color: var(--background-accent-color);   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
