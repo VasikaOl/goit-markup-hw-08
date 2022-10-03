@@ -300,6 +300,10 @@ img {
   }
 }
 .list-item {
+  flex-wrap: wrap;
+}
+
+.list-item {
   display: flex;
   gap: 30px;
 }

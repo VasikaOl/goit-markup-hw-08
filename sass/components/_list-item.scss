@@ -5,12 +5,14 @@
     }
 }
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
+.list-item {
+    flex-wrap: wrap; 
+}
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 // <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
 .list-item {
     display: flex;    
-    gap: 30px;
-    
+    gap: 30px;    
 }
 
 
