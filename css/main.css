@@ -1169,7 +1169,18 @@ img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 1199px) {
+  .footer-address {
+    margin-bottom: 60px;
+  }
+  .footer__title {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .footer-container__address {
+    align-items: baseline;
+  }
   .footer-address {
     margin-right: 70px;
   }
@@ -1197,10 +1208,6 @@ img {
   background: var(--dark-background-accent-color);
 }
 
-.footer-address {
-  margin-bottom: 60px;
-}
-
 .footer__title {
   font-weight: 700;
   font-size: 14px;
@@ -1208,7 +1215,6 @@ img {
   text-transform: uppercase;
   color: var(--white-accent-color);
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .footer__social-list-icon {
