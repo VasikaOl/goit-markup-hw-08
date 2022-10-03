@@ -1,24 +1,33 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
     .customers__list-link {        
-        width: 210px;        
-    }    
+        max-width: 210px;
+    }   
     .customers__list-item {
-        flex-wrap: wrap;        
+        width: calc((100% - 30px) / 2);
+        
     }
 }
+// <<<<<<<<<<--MOBILE + TABLET-->>>>>>>>>>>>
+@media screen and (max-width: 1199px) {
+    .customers__list {
+        flex-wrap: wrap;
+    }
+}
+
+
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
 @media screen and (min-width: 768px) {
     .customers__list-link{
         width: 226px;
     }
-    .customers__list-item {
+    .customers__list {
         flex-wrap: wrap;
     }
 }
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 @media screen and (min-width: 1200px) {
-    .customers__list-item {
+    .customers__list {
         flex-wrap: nowrap;
     }
     .customers__list-link{
@@ -53,7 +62,7 @@
         border-radius: 4px;
     }
 }
-.customers__list-item {
+.customers__list {
     display: flex;
     justify-content: center;
     gap: 30px;

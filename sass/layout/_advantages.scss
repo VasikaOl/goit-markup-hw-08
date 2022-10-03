@@ -1,7 +1,12 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
-    .advantages-list__link {    
+    .advantages-list__link {
+        max-width: 450px;    
         width: 100%;                
+    }
+    .advantages-list__description {
+        max-width: 450px;
+        width: 100%;
     }    
     .advantages-list__description-last {
         margin-bottom: 0;

@@ -834,7 +834,11 @@ img {
 @media screen and (max-width: 767px) {
   .container-hero {
     width: 100%;
+    max-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/Header.mob.img.jpg);
+  }
+  .container-hero__title {
+    width: 100%;
   }
 }
 @media screen and (min-device-picel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -887,6 +891,8 @@ img {
 .container-hero {
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: var(--background-accent-color);
   background-repeat: no-repeat;
   background-size: cover;
@@ -907,6 +913,11 @@ img {
 
 @media screen and (max-width: 767px) {
   .advantages-list__link {
+    max-width: 450px;
+    width: 100%;
+  }
+  .advantages-list__description {
+    max-width: 450px;
     width: 100%;
   }
   .advantages-list__description-last {
@@ -992,9 +1003,14 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
+  .team__item {
+    width: 100%;
+    max-width: 450px;
+  }
   .team__img {
     margin-bottom: 30px;
     width: 100%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1066,9 +1082,14 @@ img {
 
 @media screen and (max-width: 767px) {
   .customers__list-link {
-    width: 210px;
+    max-width: 210px;
   }
   .customers__list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .customers__list {
     flex-wrap: wrap;
   }
 }
@@ -1076,12 +1097,12 @@ img {
   .customers__list-link {
     width: 226px;
   }
-  .customers__list-item {
+  .customers__list {
     flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
-  .customers__list-item {
+  .customers__list {
     flex-wrap: nowrap;
   }
   .customers__list-link {
@@ -1112,7 +1133,7 @@ img {
   border-radius: 4px;
 }
 
-.customers__list-item {
+.customers__list {
   display: flex;
   justify-content: center;
   gap: 30px;
