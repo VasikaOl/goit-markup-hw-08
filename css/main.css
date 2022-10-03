@@ -1277,6 +1277,10 @@ img {
     row-gap: 15px;
     width: 326px;
   }
+  .portfolio-card {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-menu {
